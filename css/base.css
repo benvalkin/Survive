@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000000;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    background-image: url(backG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: left;
+    vertical-align: top;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loadGameDiv {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    margin: -25px 0 0 -50px;
+    left: 50%;
+    top: 50%;
+}

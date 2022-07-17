@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta id="viewport" charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Survive</title>
+    <link id="link" rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body>
+
+    <script src="code/MainMenu.js" type="module"></script>
+
+    <div class="loadGameDiv">
+        <button id="level1">Level 1</button>
+        <button id="level2">Level 2</button>
+    </div>
+
+    <div id="lowerUI" class="lowerUI">
+        <img id=crosshair class=crosshair src="/resources/UI/crosshair.png" width="1024" height="1024">
+
+        <div id="ammoUI" class="ammoUI">
+            <p id = weaponName class = weaponName>M4 CARBINE</p>
+                <img id=weaponIcon class=ammoIcon src="/resources/UI/icon_M4.png" width="256" height="100">
+            <p id = ammoCount class = ammoCount>30/30</p>
+            <p id = firingMode class = firingMode>SEMI</p>
+        </div>
+        <div id="healthUI" class="healthUI">
+            <img id=healthIcon class=healthIcon src="/resources/UI/heart.png" width="64" height="64">
+            <p id = healthBar class = healthBar>100</p>
+            <img id=killsIcon class=killsIcon src="/resources/UI/zombie.png" width="80" height="80">
+            <p id=killCount class=healthBar >0</p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<style>
+    .lowerUI
+    {
+        margin-bottom: 30px;
+        margin-right: 50px;
+        width: inherit;
+        height: fit-content;
+        position: absolute;
+        bottom: 0;
+        visibility: hidden;
+    }
+    .ammoUI {
+        align-content: center;
+        width: fit-content;
+        height: fit-content;
+        float: right;
+    }
+    .ammoIcon {
+        border: 3px solid #333333;
+        width: 256px;
+        height: 100px;
+    }
+    .weaponName
+    {
+        font: 20px Cambria;
+        color: azure;
+        text-align: left;
+    }
+    .ammoCount
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        font: 40px Cambria;
+        color: azure;
+        text-align: left;
+    }
+    .firingMode
+    {
+        margin-top: 2px;
+        margin-bottom: 2px;
+
+        font: 20px Cambria;
+        color: azure;
+        text-align: left;
+    }
+    .healthUI
+    {
+        margin-left: 70px;
+    }
+    .healthIcon
+    {
+        width: 64px;
+        height: 64px;
+        float: left;
+    }
+    .killsIcon
+    {
+        width: 70px;
+        height: 70px;
+        float: left;
+    }
+    .healthBar
+    {
+        margin-left: 30px;
+        font: 40px Cambria;
+        color: azure;
+        text-align: left;
+    }
+    .crosshair
+    {
+        
+        width: inherit;
+        height: inherit;
+    }
+</style>
+
+</html>
